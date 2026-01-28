@@ -10,8 +10,7 @@ interface AnimalStat {
  * 生成分享到 X 的文本内容（日文版）
  */
 export function generateShareText(result: MBTIResult): string {
-  const tags = result.tags.join(' ')
-  return `私のMBTIテスト結果は：${result.name} ${result.type}\n\n${result.description}\n\n${tags}\n\n無料MBTIテストはこちら！👇\nhttps://mimicgoods0001-svg.github.io/ytkmbti2/\n\n「ヨイトキ」であなたと100％マッチする方と会おう！\nhttps://yoitoki.app.link/Liamedium`
+  return `私のMBTIテスト結果は：${result.name} ${result.type}\n\n${result.description}\n\n無料MBTIテストはこちら！👇\nhttps://mimicgoods0001-svg.github.io/ytkmbti2/\n\n「ヨイトキ」であなたと100％マッチする方と会おう！\nhttps://yoitoki.app.link/Liamedium`
 }
 
 /**

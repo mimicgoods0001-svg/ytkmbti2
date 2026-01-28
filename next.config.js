@@ -4,9 +4,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // 如果部署到 GitHub Pages 子目录，取消下面的注释并设置正确的路径
-  // basePath: '/ytkMBTI',
-  // assetPrefix: '/ytkMBTI',
+  // 部署到 GitHub Pages 子目录配置
+  basePath: '/ytkmbti2',
+  assetPrefix: '/ytkmbti2',
 }
 
 module.exports = nextConfig

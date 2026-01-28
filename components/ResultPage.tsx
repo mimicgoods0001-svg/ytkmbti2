@@ -263,7 +263,7 @@ export default function ResultPage({ result, onRestart, animals }: ResultPagePro
           className="space-y-4 px-2"
         >
           <p className="text-lg sm:text-xl md:text-2xl font-semibold text-dark dark:text-white mb-4 sm:mb-6">
-            「ヨイトキ」であなたの魂の色彩と100％マッチするパートナーを探そう
+            「ヨイトキ」であなたと100％マッチする方と会おう！
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
@@ -297,9 +297,16 @@ export default function ResultPage({ result, onRestart, animals }: ResultPagePro
               )}
               {deviceType === 'desktop' && (
                 <img
-                  src="/yoitoki-icon.png"
+                  src="/ytkmbti2/yoitoki-icon.png"
                   alt="Yoitoki"
                   className="w-6 h-6 object-contain"
+                  onError={(e) => {
+                    // 如果加载失败，尝试使用根路径
+                    const target = e.target as HTMLImageElement
+                    if (target.src.includes('/ytkmbti2/')) {
+                      target.src = '/yoitoki-icon.png'
+                    }
+                  }}
                 />
               )}
               Yoitoki いますぐDL
